@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "submission_id": { "type": "string" },
+    "geo": {
+      "type": "object",
+      "properties": {
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" }
+      },
+      "required": ["latitude", "longitude"]
+    },
+    "detection": {
+      "type": "object",
+      "properties": {
+        "panels_detected": { "type": "integer" },
+        "total_area_m2": { "type": "number" },
+        "estimated_capacity_kw": { "type": "number" }
+      }
+    },
+    "qc": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string" },
+        "reason_codes": { 
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["submission_id", "geo"]
+}

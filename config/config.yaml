@@ -1,0 +1,26 @@
+satellite:
+  mapbox_token: ""
+  style: "mapbox/satellite-v9"
+  resolution_px: 1080
+  zoom_default: 19
+
+output:
+  outdir: "data/outputs"
+
+
+
+yolo:
+  model_path: "models/solar_panel_detector.pt"
+  conf: 0.25
+
+segmentation:
+  use_seg_refine: true
+  model_path: "models/solar_seg.pt"
+  conf: 0.25
+  temp_dir: "data/segmentation_masks"
+
+qc:
+  min_overlap_pixels: 1   # Minimum mask pixels inside buffer to count as solar
+
+output:
+  outdir: "data/outputs"
