@@ -1,0 +1,13 @@
+runs/
+dataset/
+newDataset/
+training/
+test/
+data/
+venv/
+yolovenv/
+yolov8env/
+__pycache__/
+*.pt
+.git/
+.gitignore

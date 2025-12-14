@@ -1,0 +1,15 @@
+ultralytics
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+PyYAML>=6.0
+pydantic>=1.10
+jsonschema>=4.20
+pandas>=2.0
+openpyxl>=3.1
+requests>=2.31
+numpy>=1.26
+opencv-python>=4.7
+Pillow>=10.0
+shapely>=2.0
